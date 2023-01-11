@@ -1,15 +1,10 @@
+// declare class
 class Shape {
-  constructor(color) {
-    this.color = color;
+  constructor() {
+    this.color = "green";
   }
-
-  drawShape() {
-    console.log("Drawing a shape");
-  }
-
-  calculateArea() {
-    console.log("Calculating area");
-  }
+  drawShape() {}
+  calculateArea() {}
 }
-
+// export class using module.exports
 module.exports = Shape;

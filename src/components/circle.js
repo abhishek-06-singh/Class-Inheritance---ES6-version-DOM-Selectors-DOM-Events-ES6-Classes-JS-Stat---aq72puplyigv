@@ -1,20 +1,13 @@
-import Circle from "./circle";
+// import using require
+var Shape = require("./shape.js");
 
-const myCircle = new Circle("red", 10);
-myCircle.drawShape(); // Output: "Drawing a shape"
-myCircle.calculateArea(); // Output: "The area of the circle is 314.16"
-const Shape = require("./shape");
-
+// declare class
 class Circle extends Shape {
-  constructor(color, radius) {
-    super(color);
-    this.radius = radius;
+  constructor(color) {
+    super();
   }
-
-  calculateArea() {
-    const area = Math.PI * this.radius * this.radius;
-    console.log(`The area of the circle is ${area}`);
-  }
+  calculateArea() {}
 }
 
+// export class using module.exports
 module.exports = Circle;
